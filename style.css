@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(133, 204, 231);
+}
+
+h1 {
+text-align: center;
+color: blue;
+}
+
+h1::first-letter {
+    font-size: 100px;
+    color: black;
+}
+
+div.div {
+    text-align: center
+}
+
+h2 {
+    color: blue;
+    display:inline; 
+}
+
+
+h2.vida:hover {
+    background-color: yellow;
+    color: red;
+}
+
+h2.productos:hover {
+    background-color: yellow;
+    color: red;
+}
+
+h2.empresas:hover {
+    background-color: yellow;
+    color: red;
+}
+
+
+p {
+    text-align: justify;
+}
+
+p.primero::first-line {
+    color: red;
+}
+
+p.segundo::first-line {
+    color: red;
+}
+
+a {
+    color: blue;
+}
+
+a:link {
+    background-color: white;
+}
+
+a.link:visited {
+    background-color: blue;
+    color: white;
+}
+
+h3.ciclos {
+    counter-reset: cuenta-ciclos;
+}
+
+p.ciclos::before {
+    content: counter(cuenta-ciclos) " .";
+    counter-increment: cuenta-ciclos;
+}
+
+p.cursi {
+    font-style: oblique;
+}
+
+img {
+    float: right;
+}
